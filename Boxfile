@@ -3,3 +3,4 @@ web1:
   document_root: public
   shared_writable_dirs: [storage/cache,storage/logs,storage/views,storage/work,storage/sessions]
   php_extensions: [mcrypt]
+  php_display_errors: "0"
