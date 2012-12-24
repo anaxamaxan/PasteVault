@@ -3,14 +3,14 @@ $(document).ready(function(){
 	$('#copy_button').zclip({
 	    path: 'swf/ZeroClipboard.swf',
 	    copy: function(){return $('#copy_text').val();},
-	    afterCopy: function(){ 
+	    afterCopy: function(){
 	    	$('#results').html($('#copied').html());
 	    	setTimeout(function(){
-	    		window.location.reload(); 
+	    		window.location.reload();
 	    	}, 2000);
 	    },
-	});		
-		
+	});
+
 
 	// Encrypt!
 	$('#create_form').submit(function(){
@@ -57,7 +57,8 @@ $(document).ready(function(){
 		// Decrypt!
 		try
 		{
-			var open_text = sjcl.decrypt($.trim($('#decrypt_password').val()), encrypted_text);	
+			var open_text = sjcl.decrypt($.trim($('#decrypt_password').val()), encrypted_text);
+			open_text = open_text.replace(/\n/g, '<br />');
 			$('#get_password').hide();
 			$('#view_body').html(open_text);
 		}
