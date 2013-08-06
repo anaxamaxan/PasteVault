@@ -64,7 +64,7 @@ return array(
 
 	'memcached' => array(
 
-		array('host' => stripslashes($_SERVER['PV_MEMCACHE'), 'port' => 11211, 'weight' => 100),
+		array('host' => stripslashes($_SERVER['PV_MEMCACHE']), 'port' => 11211, 'weight' => 100),
 
 	),	
 
