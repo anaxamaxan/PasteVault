@@ -60,7 +60,7 @@ $(document).ready(function(){
 			var open_text = sjcl.decrypt($.trim($('#decrypt_password').val()), encrypted_text);
 			open_text = open_text.replace(/\n/g, '<br />');
 			$('#get_password').hide();
-			$('#view_body').html(open_text);
+			$('#view_body').text(open_text);
 		}
 		catch(err)
 		{
