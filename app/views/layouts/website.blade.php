@@ -53,13 +53,13 @@
 
 	<a href="https://github.com/UserScape/PasteVault"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>	
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js">
-	<script type="text/javascript" src="/js/jquery.base64.js">
-	<script type="text/javascript" src="/js/jquery.reveal.js">
-	<script type="text/javascript" src="/js/jquery.zclip.min.js">
-	<script type="text/javascript" src="/js/sjcl.js">
-	<script type="text/javascript" src="/js/logic.js">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.base64.js"></script>
+	<script type="text/javascript" src="/js/jquery.reveal.js"></script>
+	<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+	<script type="text/javascript" src="/js/sjcl.js"></script>
+	<script type="text/javascript" src="/js/logic.js"></script>
 
 </body>
 </html>
