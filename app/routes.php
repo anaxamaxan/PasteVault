@@ -38,7 +38,7 @@ Route::post('save', function()
 	{
 		// We're going to encrypt again as a second line of defence should
 		// there be a vulnerability with the JS encryption lib.
-		$text = Crypter::encrypt(Input::get('text'));
+		$text = Crypt::encrypt(Input::get('text'));
 
 		// Create a key for the text.
 		$key = sha1($text);
@@ -65,7 +65,7 @@ Route::get('view/(:any)', function($key)
 	if(Cache::has($key))
 	{
 		// Get text and decrypt our encryption
-		$text = Crypter::decrypt(Cache::get($key));
+		$text = Crypt::decrypt(Cache::get($key));
 
 		return View::make('app.view')->with('encrypted_text', $text);
 	}
