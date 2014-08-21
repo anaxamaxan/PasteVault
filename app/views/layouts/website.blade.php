@@ -6,8 +6,8 @@
 	<title>Temporary Encrypted Text :: PasteVault</title>
 	<meta name="viewport" content="width=device-width">
 	@yield('headers')
-	{{ HTML::style('css/reveal.css') }}
-	{{ HTML::style('css/style.css') }}
+	<link type="text/css" rel="stylesheet" media="all" href="/css/reveal.css">
+	<link type="text/css" rel="stylesheet" media="all" href="css/style.css"?
 
 	@if(Config::get('pv.google_analytics'))
 		<script type="text/javascript">
@@ -53,13 +53,13 @@
 
 	<a href="https://github.com/UserScape/PasteVault"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>	
 
-	{{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js') }}
-	{{ HTML::script('https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js') }}
-	{{ HTML::script('js/jquery.base64.js') }}
-	{{ HTML::script('js/jquery.reveal.js') }}
-	{{ HTML::script('js/jquery.zclip.min.js') }}
-	{{ HTML::script('js/sjcl.js') }}
-	{{ HTML::script('js/logic.js') }}
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js">
+	<script type="text/javascript" src="/js/jquery.base64.js">
+	<script type="text/javascript" src="/js/jquery.reveal.js">
+	<script type="text/javascript" src="/js/jquery.zclip.min.js">
+	<script type="text/javascript" src="/js/sjcl.js">
+	<script type="text/javascript" src="/js/logic.js">
 
 </body>
 </html>
