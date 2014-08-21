@@ -28,7 +28,7 @@
 <body>
 	<div id="centerwrap"> 
 		<div id="sidebar">
-			<a href="{{ URL::to('/') }}"><img src="{{ URL::to_asset('img/logo.png') }}" title="{{ Lang::get('pv.heading') }}" /></a>
+			<a href="{{ URL::to('/') }}"><img src="/img/logo.png" title="{{ Lang::get('pv.heading') }}" /></a>
 			<p>{{ Lang::get('pv.intro') }}</p>
 			<p>{{ Lang::get('pv.intro2') }}</p>
 			<p>{{ Lang::get('pv.great') }}</p>
