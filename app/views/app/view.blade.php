@@ -2,7 +2,7 @@
 
 @section('headers')
 	<meta name="robots" content="noindex, nofollow">
-@endsection
+@stop
 
 @section('page')
 
