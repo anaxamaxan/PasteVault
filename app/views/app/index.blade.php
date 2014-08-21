@@ -2,7 +2,7 @@
 
 @section('page')
 
-	{{ Form::open('', 'post', array('id'=>'create_form'), true) }}
+	{{ Form::open(array('id'=>'create_form'), true) }}
 
 		{{ Form::honeypot('first_name', 'first_name_time') }}
 
