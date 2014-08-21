@@ -47,7 +47,7 @@ Route::post('save', function()
 		Cache::put($key, $text, Input::get('expire') );
 
 		// Return the generated URL
-		return Response::make(URL::to("view/{$key}", true), 200);
+		return Response::make(URL::to("view/{$key}"), 200);
 	}
 
 	return Response::json($validator->errors->all(':message'), 400);
