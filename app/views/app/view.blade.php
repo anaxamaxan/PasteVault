@@ -7,13 +7,13 @@
 @section('page')
 
 	<div id="get_password">
-		{{ Form::label('decrypt_password', __('pv.decrypt_password')) }}
-		<span class="help">{{ __('pv.decrypt_password_info') }}</span>
+		{{ Form::label('decrypt_password', Lang::get('pv.decrypt_password')) }}
+		<span class="help">{{ Lang::get('pv.decrypt_password_info') }}</span>
 		{{ Form::text('decrypt_password') }}
-		{{ Form::button(__('pv.display_message'), array('id'=>'display_message')) }}
+		{{ Form::button(Lang::get('pv.display_message'), array('id'=>'display_message')) }}
 	</div>
 
-	<h3>{{ __('pv.message') }}</h3>
+	<h3>{{ Lang::get('pv.message') }}</h3>
 	<div id="view_body">{{ trim($encrypted_text) }}</div>
 
 @stop

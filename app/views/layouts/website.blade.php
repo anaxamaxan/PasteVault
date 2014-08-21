@@ -28,15 +28,15 @@
 <body>
 	<div id="centerwrap"> 
 		<div id="sidebar">
-			<a href="{{ URL::to('/') }}"><img src="{{ URL::to_asset('img/logo.png') }}" title="{{ __('pv.heading') }}" /></a>
-			<p>{{ __('pv.intro') }}</p>
-			<p>{{ __('pv.intro2') }}</p>
-			<p>{{ __('pv.great') }}</p>
+			<a href="{{ URL::to('/') }}"><img src="{{ URL::to_asset('img/logo.png') }}" title="{{ Lang::get('pv.heading') }}" /></a>
+			<p>{{ Lang::get('pv.intro') }}</p>
+			<p>{{ Lang::get('pv.intro2') }}</p>
+			<p>{{ Lang::get('pv.great') }}</p>
 
 			<ul>
-				<li>{{ __('pv.pt1') }}</li>
-				<li>{{ __('pv.pt2') }}</li>
-				<li>{{ __('pv.pt3') }}</li>
+				<li>{{ Lang::get('pv.pt1') }}</li>
+				<li>{{ Lang::get('pv.pt2') }}</li>
+				<li>{{ Lang::get('pv.pt3') }}</li>
 			</ul>
 		</div>
 		
@@ -47,7 +47,7 @@
 		</div>
 
 		<div id="footer">
-			{{ __('pv.footer', array('year'=>date('Y'))) }}
+			{{ Lang::get('pv.footer', array('year'=>date('Y'))) }}
 		</div>
 	</div>
 
