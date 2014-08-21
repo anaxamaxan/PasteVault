@@ -1,35 +1,25 @@
-## PasteVault - Email lives forever, passwords in email shouldn't
+## Laravel PHP Framework
 
-**Critical Note - PasteVault must be served over SSL. Even though it encrypts the text client side, without serving the javascript that does this over SSL it could be interfered with and expose the users data.**
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-PasteVault is an application to allow the creation of temporary text notes which are encrypted in browser and stored on a server with an expiration. A unique link is generated and that link can be shared for up to the expiration period. With the link, plus the password the text can be decoded. This is perfect for sending confidential information into a help desk or over email. Not using such a tool means your password, url, address, etc is stored forever in the help desk tool or email system.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
 
-[PasteVault.com](https://www.pastevault.com) is available already, this is the source code for that site should you want to run your own in house instance of PasteVault.
+Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
 
-### Installation
+Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-PasteVault works out of the box. To customize it for production edit the files in the "production" folder in /application/config/. Make sure on your production server to set the Laravel environment to production ([info](http://laravel.com/docs/install#environments)).
+## Official Documentation
 
-The Laravel /storage directory must be writable
+Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
 
-### Storage
+### Contributing To Laravel
 
-PasteVault defaults to storing the texts via Laravel's Cache system to file. You could change this to MySQL or one of the other options via configuration.
+**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
 
-### Clean Up
+### License
 
-A task is included to clean out expired texts. This isn't technically required as trying to access an expired text will cause the cache to delete it anyway and it won't be served to the visitor, but it's nice to be able to clean out old ones. You run the task via cron using Laravel artisan. In a production setup you'd use something like:
-
-	/path/to/php /path/to/artisan clean
-
-### PasteVault License
-
-PasteVault is open-sourced software licensed under the MIT License.
-
-### PasteVault Copyright
-
-The name PasteVault and PasteVault.com as well as the logo are copyright UserScape, Inc.
-
-### Stanford Javascript Crypto Library License
-
-The Stanford Javascript Crypto Library is distributed under the terms of the BSD
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
