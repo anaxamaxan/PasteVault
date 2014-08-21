@@ -41,7 +41,7 @@ Route::post('save', function()
 		$text = Crypt::encrypt(Input::get('text'));
 
 		// Create a key for the text.
-		$key = sha1($text);
+		$key = md5($text);
 
 		// Save the text using Laravel's cache.
 		Cache::put($key, $text, Input::get('expire') );
