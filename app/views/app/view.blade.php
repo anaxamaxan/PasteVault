@@ -1,4 +1,4 @@
-@layout('layouts.website')
+@extends('layouts.website')
 
 @section('headers')
 	<meta name="robots" content="noindex, nofollow">
@@ -16,4 +16,4 @@
 	<h3>{{ __('pv.message') }}</h3>
 	<div id="view_body">{{ trim($encrypted_text) }}</div>
 
-@endsection
+@stop

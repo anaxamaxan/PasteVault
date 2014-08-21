@@ -1,4 +1,4 @@
-@layout('layouts.website')
+@extends('layouts.website')
 
 @section('page')
 
@@ -40,4 +40,4 @@
 	<script type="text/template" id="response_template">
 		{{ __('pv.copymessage') }}
 	</script>
-@endsection
+@stop

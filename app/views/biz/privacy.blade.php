@@ -1,4 +1,4 @@
-@layout('layouts.website')
+@extends('layouts.website')
 
 @section('page')
 <div class="biz">
@@ -24,4 +24,4 @@
 <p>Although most changes are likely to be minor, {{ Config::get('pv.company') }} may change its Privacy Policy from time to time, and in {{ Config::get('pv.company') }}’s sole discretion. {{ Config::get('pv.company') }} encourages visitors to frequently check this page for any changes to its Privacy Policy.</p>
 
 </div>
-@endsection
+@stop

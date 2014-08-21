@@ -1,4 +1,4 @@
-@layout('layouts.website')
+@extends('layouts.website')
 
 @section('page')
 <div class="biz">
@@ -28,4 +28,4 @@
 </ol>
 
 </div>
-@endsection
+@stop
