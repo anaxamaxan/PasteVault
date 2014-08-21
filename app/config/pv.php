@@ -12,12 +12,12 @@ return array(
 	*/
 
 	'minutes' => array(
-		'10'     => __('pv.minutes', array('minutes'=>10)),
-		'60'     => __('pv.hour', array('hour'=>1)),
-		'720'    => __('pv.hours', array('hours'=>12)),
-		'1440'   => __('pv.hours', array('hours'=>24)),
-		'2880'   => __('pv.hours', array('hours'=>48)),
-		'10080'  => __('pv.days', array('days'=>7)),
+		'10'     => Lang::get('pv.minutes', array('minutes'=>10)),
+		'60'     => Lang::get('pv.hour', array('hour'=>1)),
+		'720'    => Lang::get('pv.hours', array('hours'=>12)),
+		'1440'   => Lang::get('pv.hours', array('hours'=>24)),
+		'2880'   => Lang::get('pv.hours', array('hours'=>48)),
+		'10080'  => Lang::get('pv.days', array('days'=>7)),
 	),
 
 	/*
