@@ -104,6 +104,10 @@ Route::get('privacy', function()
 	return View::make('biz.privacy');
 });
 
+App::missing(function($exception)
+{
+    return Response::view('error.404', array(), 404);
+});
 
 /*
 |--------------------------------------------------------------------------
