@@ -57,7 +57,6 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.base64.js"></script>
 	<script type="text/javascript" src="/js/jquery.reveal.js"></script>
-	<script type="text/javascript" src="/js/autolink-min.js"></script>
 	<script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
 	<script type="text/javascript" src="/js/sjcl.js"></script>
 	<script type="text/javascript" src="/js/logic.js"></script>
