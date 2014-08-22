@@ -1,25 +1,39 @@
-## Laravel PHP Framework
+## PasteVault - Email lives forever, passwords in email shouldn't
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+**Critical Note - PasteVault must be served over SSL. Even though it encrypts the text client side, without serving the javascript that does this over SSL it could be interfered with and expose the users data.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+PasteVault is an application to allow the creation of temporary text notes which are encrypted in browser and stored on a server with an expiration. A unique link is generated and that link can be shared for up to the expiration period. With the link, plus the password the text can be decoded. This is perfect for sending confidential information into a help desk or over email. Not using such a tool means your password, url, address, etc is stored forever in the help desk tool or email system.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+[PasteVault.com](https://www.pastevault.com) is available already, this is the source code for that site should you want to run your own in house instance of PasteVault.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### Installation
 
-## Official Documentation
+PasteVault works pretty much out of the box. There are a few environmental variables you should set. The **appkey is required**. 
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+PV_APPKEY "secret key for encrypting stuff";
 
-### Contributing To Laravel
+PV_COMPANY "Company, Inc";
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+PV_GOOGLE_STATS "UA-XXXXXX";
 
-### License
+The Laravel /storage directory must be writable
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+### Storage
+
+PasteVault defaults to storing the texts via Laravel's Cache system to file. You could change this to MySQL or one of the other options via configuration.
+
+### PasteVault License
+
+PasteVault is open-sourced software licensed under the MIT License.
+
+### PasteVault Copyright
+
+The name PasteVault and PasteVault.com as well as the logo are copyright UserScape, Inc.
+
+### Stanford Javascript Crypto Library License
+
+The Stanford Javascript Crypto Library is distributed under the terms of the BSD
+
+### Use at your own risk!
+
+This is something I hacked together in a few hours. It's suffecient for sending stuff you'd rather not have stored forever in an email client or help desk app. Use at your own risk.
