@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 	@yield('headers')
 	<link type="text/css" rel="stylesheet" media="all" href="/css/reveal.css">
-	<link type="text/css" rel="stylesheet" media="all" href="css/style.css">
+	<link type="text/css" rel="stylesheet" media="all" href="/css/style.css">
 
 	@if(Config::get('pv.google_analytics'))
 		<script type="text/javascript">
