@@ -60,7 +60,7 @@ Route::post('save', function()
 | the expired page.
 |
 */
-Route::get('view/(:any)', function($key)
+Route::get('view/{key}', function($key)
 {
 	if(Cache::has($key))
 	{
