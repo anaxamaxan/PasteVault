@@ -59,7 +59,7 @@ $(document).ready(function(){
 		{
 			var open_text = sjcl.decrypt($.trim($('#decrypt_password').val()), encrypted_text);
 			$('#get_password').hide();
-			$('#view_body').html(open_text.replace(/(?:\r\n|\r|\n)/g, '<br />'));
+			$('#view_body').html(open_text.replace(/(?:\r\n|\r|\n)/g, '<br />').autoLink());
 		}
 		catch(err)
 		{
