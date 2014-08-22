@@ -36,4 +36,4 @@ The Stanford Javascript Crypto Library is distributed under the terms of the BSD
 
 ### Use at your own risk!
 
-This is something I hacked together in a few hours. It's suffecient for sending stuff you'd rather not have stored forever in an email client or help desk app. Use at your own risk.
+This is something I hacked together in a few hours. It's sufficient for sending stuff you'd rather not have stored forever in an email client or help desk app. Use at your own risk.
